@@ -124,10 +124,9 @@ Tahapan preprocessing dilakukan secara bertahap pada setiap percobaan.
 Contoh preprocessing yang digunakan:
 
 1. Resize
-2. Grayscale Conversion
-3. Histogram Equalization
-4. Median Filtering
-5. Thresholding / Segmentasi
+2. Grayscale Conversion / Pemisahan Chanel RGB
+3. Median Filtering
+4. Thresholding / Segmentasi
 
 ---
 
@@ -139,6 +138,7 @@ Preprocessing:
 
 * Resize
 * Grayscale
+* Median
 
 Feature Extraction:
 
@@ -159,8 +159,8 @@ Preprocessing:
 
 * Resize
 * Grayscale
-* Histogram Equalization
 * Median Filtering
+* Edge Detection Sobel + Robert
 
 Feature Extraction:
 
@@ -181,9 +181,51 @@ Preprocessing:
 
 * Resize
 * Grayscale
-* Histogram Equalization
 * Median Filtering
+* Edge Detection Sobel + Robert
 * Thresholding / Segmentasi
+* Closing + Opening
+
+Feature Extraction:
+
+* GLCM
+* Wavelet
+
+Model:
+
+* KNN
+* SVM
+* Random Forest
+
+### Percobaan 4
+
+Preprocessing:
+
+* Resize
+* Pemisahan Chanel R
+* Sharpening
+* Smoothing
+
+Feature Extraction:
+
+* GLCM
+* Wavelet
+
+Model:
+
+* KNN
+* SVM
+* Random Forest
+
+### Percobaan 5
+
+Preprocessing:
+
+* Resize
+* Pemisahan Chanel G
+* Pemisahan Chanel B
+* Sharpening
+* Smooting
 
 Feature Extraction:
 
@@ -218,13 +260,6 @@ Menggunakan Discrete Wavelet Transform (DWT) untuk memperoleh:
 * Vertical Detail (HL)
 * Diagonal Detail (HH)
 
-Fitur statistik yang diambil:
-
-* Mean
-* Standard Deviation
-* Energy
-* Entropy
-
 ---
 
 ## Classification Models
@@ -255,19 +290,9 @@ Evaluasi model dilakukan menggunakan:
 
 ---
 
-## Results
-
-| Experiment  | KNN | SVM | Random Forest |
-| ----------- | --- | --- | ------------- |
-| Percobaan 1 | -   | -   | -             |
-| Percobaan 2 | -   | -   | -             |
-| Percobaan 3 | -   | -   | -             |
-
----
-
 ## Conclusion
 
-Project ini mengevaluasi pengaruh preprocessing, ekstraksi fitur GLCM dan Wavelet, serta perbandingan performa algoritma KNN, SVM, dan Random Forest dalam klasifikasi penyakit daun jagung. Hasil dari setiap percobaan digunakan untuk menentukan kombinasi preprocessing dan model yang memberikan performa terbaik.
+[   ]
 
 ---
 

@@ -196,6 +196,8 @@ Model:
 * KNN
 * SVM
 * Random Forest
+  
+---
 
 ### Percobaan 4
 
@@ -216,6 +218,8 @@ Model:
 * KNN
 * SVM
 * Random Forest
+
+---
 
 ### Percobaan 5
 

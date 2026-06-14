@@ -363,10 +363,15 @@ def smoothing(img):
 
 def sharpening(img):
 
+    # kernel = np.array([
+    #     [-1, -1, -1],
+    #     [-1,  9, -1],
+    #     [-1, -1, -1]
+    # ])
     kernel = np.array([
-        [-1, -1, -1],
-        [-1,  9, -1],
-        [-1, -1, -1]
+        [0,-1,0],
+        [-1,5,-1],
+        [0,-1,0]
     ])
 
     hasil = convolution(img, kernel)
